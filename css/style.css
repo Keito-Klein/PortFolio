@@ -1,0 +1,268 @@
+
+@font-face {
+    font-family: 'nick';
+    src: url('../assets/font/firasans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'name';
+    src: url('../assets/font/firasans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'teks';
+    src: url('../assets/font/firasans-bookitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: .7;
+	}
+}
+
+@keyframes zoomfade {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+body {
+	background-image: url(../assets/background.jfif);
+	background-size: cover;
+}
+
+.container {
+	width: 802px;
+	margin: auto;
+	padding-bottom: 5px;
+	border: 3px solid grey;
+	box-shadow: 0px 0px 2px 2px grey;
+	background-color: rgba(92, 92, 92, 0.9);
+}
+
+/*
+ *FONT TEXT*
+ 			*/
+h1 {
+	font-family: name, arial, sans-serif;
+	font-size: 36px;
+}
+
+h4 {
+	font-family: nick, arial, sans-serif;
+	font-size: 22px;
+}
+
+p {
+	font-family: arial, sans-serif;
+}
+
+/*
+ *END OF FONT TEXT*
+ 				 */
+
+/*
+ *PROFILE IMAGE*
+ 			   */
+.sampul img {
+	width: 800px;
+	height: 330px;
+	margin: auto;
+	cursor: pointer;
+	border: 3px solid grey;
+	box-shadow: 2px 2px 3px grey;
+}
+
+
+
+.thumbp img {
+	width: 165px;
+	height: 160px;
+	border-radius: 50%;
+	border: 2px solid #525050; 
+	box-shadow: 0px 0px 2px 2px grey;
+	margin-left: 315px;
+	position: absolute;
+	top: 250px;
+}
+
+h2 {
+	font-family: name, arial, sans-serif;
+	font-size: 36px;
+	text-align: center;
+	margin: 10px auto;
+}
+
+div .icontain {
+	width: 800px;
+	border-top: 2px solid grey;
+	border-bottom:  2px solid grey;
+	padding-bottom: 20px;
+}
+
+/*
+ *END OF PROFILE IMAGE*
+ 					  */
+
+/*
+ *BIO*
+ 	 */
+
+.ingfo {
+	width: 300px;
+	height: 60px;
+	border: 2px 2px solid grey;
+
+	text-align: center;
+	margin: 100px auto;
+
+}
+
+/*
+ *END OF BIO*
+ 			*/
+
+/*
+ *GALERY*
+ 		*/
+
+div .contain {
+	width: 680px;
+	display: inline-block;
+	border: 3px inset #7a7878;
+	margin-left: 8%;
+}
+
+.galery li .thumb {
+	width: 200px;
+	height: 180px;
+	float: left;
+	border-radius: 15%;
+	border: 1px solid #999;
+	box-shadow: 0 0 1px 1px #9e9e9e;
+	overflow: hidden;
+	margin: 8px;
+	position: static;
+}
+
+.galery li a img {
+	width: 200px;
+	height: 180px;
+}
+
+.fullZise {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(145, 145, 145, .7);
+	z-index: 999;
+	padding: 30px 0;
+}
+
+.fullZise:target {
+	right: 0;
+	bottom: 0;
+	width: auto;
+	height: auto;
+	text-align: center;
+	animation: fade 1s;
+}
+
+.fullZise:target img {
+	animation: zoomfade 1s;
+}
+
+.fullZise img {
+	max-height: 100%;
+	box-shadow: 1px 1px 3px black;
+}
+
+.fullZise a {
+	padding: 2px 10px;
+	position: absolute;
+	color: white;
+	text-decoration: none;
+	background-color: #ed1313;
+	top: 4.5%;
+	left: 80.1%;
+	border: 2px solid black;
+	transition: .7s;
+	opacity: .3;
+	animation: zoomfade 1s;
+}
+
+ .fullZise a:hover {
+	opacity: 100%
+}
+
+/*
+ *ABOUT ME*
+ 		  */
+ .about {
+ 	width: 700px;
+ 	margin: auto;
+ 	text-align: center;
+ }
+.aboutme {
+	text-decoration: underline;
+}
+
+p.abut {
+	font-family: teks, arial, sans-serif;
+}
+
+strong {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h5 {
+	font-family: name, arial, sans-serif;
+	font-size: 18px;
+}
+
+.about a {
+	font-family: name, arial, sans-serif;
+	display: inline;
+	text-decoration: none;
+	color: #26c9d1;
+}
+
+.footer p {
+	width: 800px;
+	height: 10px;
+	background-color: #2e2e2e;
+	margin-top: 50px;
+	margin-bottom: 0;
+	padding: 10px 0px;
+	text-align: center;
+	font-family: teks, arial, sans-serif;
+	color: white;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
