@@ -1,0 +1,21 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "node module for web",
+  "main": "sync.js",
+  "dependencies": {
+    "fs-constants": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^10.0.0",
+    "fs.realpath": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Taufik",
+  "license": "ISC"
+}
