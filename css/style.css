@@ -23,6 +23,14 @@
 
 }
 
+@font-face {
+    font-family: submit;
+    src: url('../assets/font/chunk_five_print-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @keyframes fade {
 	from {
 		opacity: 0;
@@ -245,9 +253,10 @@ h5 {
 
 .about a {
 	font-family: name, arial, sans-serif;
-	display: inline;
+	display: inline-block;
 	text-decoration: none;
 	color: #26c9d1;
+	padding-bottom: 18px;
 }
 
 .footer p {
@@ -261,6 +270,76 @@ h5 {
 	font-family: teks, arial, sans-serif;
 	color: white;
 	font-weight: bold;
+}
+
+div.contact {
+	width: 680px;
+	position: relative;
+	top: 1em;
+	left: 2.4em;
+	font-size: 24px;
+}
+
+form {
+	padding: 10px;
+	border: 3px inset #7a7878;
+}
+
+input {
+	width: 380px;
+	height: 22px;
+	border-radius: 10px;
+	transition: 1s;
+}
+
+textarea {
+	border-radius: 10px;
+	transition: 1s;
+}
+
+input:focus {
+	outline: none;
+	opacity: .8;
+}
+
+textarea:focus {
+	outline: none;
+	opacity: .8;
+}
+
+button {
+	width: 150px;
+	height: 100px;
+	font-family: submit, arial, sans-serif;
+	padding: 15px;
+	background-color: #26c1e0;
+	border: 2px solid grey;
+	cursor: pointer;
+	font-size: 22px;
+	font-style: bold;
+	position: relative;
+	left: 470px;
+	bottom: 200px;
+}
+
+button:hover {
+	background-color: #1d9cb5;
+	box-shadow: 0px 0px 1px 1px;
+}
+
+div.visitor {
+	width: 600px;
+	height: 380px;
+	border: 2px inset #7a7878;
+	color: white;
+	margin: auto;
+}
+.visitor h1 {
+	text-align: center;
+	margin-top: 6px;
+	font-family: name, arial, sans-serif;
+	font-size: 36px;
+	color: black;
 }
 
 .clear {
